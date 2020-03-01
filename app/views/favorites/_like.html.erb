@@ -3,7 +3,6 @@
     <%= hidden_field_tag :like_id, micropost.id %>
     <%= f.submit 'Unlike', class: 'btn btn-danger btn-sm' %>
   <% end %>
-  
 <% else %>
   <div id="favorite-button">
     <%= form_with(model: current_user.favorites.build, id: "favorite-button", local: true) do |f| %>
